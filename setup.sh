@@ -67,9 +67,9 @@ After=graphical-session.target
 
 [Service]
 ExecStartPre=/bin/sleep 3
-ExecStart=${INSTALL_LOCATION}
-Restart=no
 Environment=XDG_CURRENT_DESKTOP=GNOME
+ExecStart=${INSTALL_LOCATION}
+Restart=on-failure
 
 [Install]
 WantedBy=default.target
