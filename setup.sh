@@ -81,5 +81,6 @@ sudo systemctl enable zenbook-duo.service
 systemctl --user daemon-reexec
 systemctl --user daemon-reload
 sudo systemctl --global enable zenbook-duo-user.service
+systemctl --user restart zenbook-duo-user.service
 
 echo "Install complete."
